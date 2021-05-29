@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "ralewayregular";
+  src: url("/Fonts/raleway-regular-webfont.eot");
+  src: url("/Fonts/raleway-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/Fonts/raleway-regular-webfont.woff2") format("woff2"),
+    url("/Fonts/raleway-regular-webfont.woff") format("woff"),
+    url("/Fonts/raleway-regular-webfont.ttf") format("truetype"),
+    url("/Fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  src: url("/Fonts/Raleway-Bold.ttf") format("truetype"),
+    url("/Fonts/Raleway-ExtraBold.ttf") format("truetype"),
+    url("/Fonts/Raleway-Black.ttf") format("truetype");
+}
+
+#main {
+  width: 900px;
+  margin: 40px 40px 40px 40px;
+}
+
+#hanger {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo img {
+  width: 70px;
+  height: 39px;
+}
+
+h2 {
+  font-family: "ralewayregular", Arial, serif;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+nav a {
+  font-family: "ralewayregular", Arial, serif;
+}
