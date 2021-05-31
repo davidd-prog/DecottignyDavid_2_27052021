@@ -1,3 +1,5 @@
+/* Les polices de caractères utilisées */
+
 @font-face {
   font-family: "ralewayregular";
   src: url("Fonts/Raleway-Regular.ttf") format("truetype");
@@ -10,18 +12,23 @@
   font-weight: 700;
 }
 
+/* Le bloc page */
+
 #main {
   margin: 40px 15px 40px 40px;
 }
 
+h2,
+p,
+nav a {
+  font-family: "ralewayregular", Arial, serif;
+}
+
+/* Le header */
+
 header {
   display: flex;
   justify-content: space-between;
-}
-
-#hanger {
-  display: flex;
-  flex-direction: column;
 }
 
 #logo img {
@@ -29,21 +36,9 @@ header {
   height: 39px;
 }
 
-h2 {
-  font-family: "ralewayregular", Arial, serif;
-  font-size: 1.1em;
-  font-weight: 900;
-  margin-bottom: 3px;
-}
-
-p {
-  font-family: "ralewayregular", Arial, serif;
-  font-size: small;
-  margin-top: 3px;
-}
+/* Navigation*/
 
 nav a {
-  font-family: "ralewayregular", Arial, serif;
   font-size: small;
   font-weight: 600;
   text-decoration: none;
@@ -68,4 +63,24 @@ nav ul {
 
 li {
   width: 120px;
+}
+
+/* Corps */
+
+/* L'accroche du site */
+
+#hanger {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1em;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: small;
+  margin-top: 5px;
 }
