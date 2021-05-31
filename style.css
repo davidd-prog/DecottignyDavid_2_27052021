@@ -1,22 +1,22 @@
 @font-face {
   font-family: "ralewayregular";
-  src: url("/Fonts/raleway-regular-webfont.eot");
-  src: url("/Fonts/raleway-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("/Fonts/raleway-regular-webfont.woff2") format("woff2"),
-    url("/Fonts/raleway-regular-webfont.woff") format("woff"),
-    url("/Fonts/raleway-regular-webfont.ttf") format("truetype"),
-    url("/Fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  src: url("/Fonts/Raleway-Bold.ttf") format("truetype"),
-    url("/Fonts/Raleway-ExtraBold.ttf") format("truetype"),
-    url("/Fonts/Raleway-Black.ttf") format("truetype");
+  src: url("Fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ralewayregular";
+  src: url("Fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 #main {
-  width: 900px;
-  margin: 40px 40px 40px 40px;
+  margin: 40px 15px 40px 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 #hanger {
@@ -31,10 +31,41 @@
 
 h2 {
   font-family: "ralewayregular", Arial, serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 900;
+  margin-bottom: 3px;
+}
+
+p {
+  font-family: "ralewayregular", Arial, serif;
+  font-size: small;
+  margin-top: 3px;
 }
 
 nav a {
   font-family: "ralewayregular", Arial, serif;
+  font-size: small;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0065fc;
+}
+
+nav a:hover {
+  border-top: 3px solid #0065fc;
+  padding: 55px 10px 10px 10px;
+  font-weight: 500;
+}
+
+a:visited {
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  width: 120px;
 }
