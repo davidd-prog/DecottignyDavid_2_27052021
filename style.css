@@ -15,9 +15,11 @@
 /* Le bloc page */
 
 #main {
-  margin: 40px 15px 40px 40px;
+  margin: auto;
+  padding: 10px 0 10px 20px;
 }
 
+h1,
 h2,
 p,
 nav a {
@@ -33,22 +35,24 @@ header {
 
 #logo img {
   width: 70px;
-  height: 39px;
+  height: 35px;
+  padding: 10px 30px 10px 10px;
 }
 
 /* Navigation*/
 
 nav a {
-  font-size: small;
-  font-weight: 600;
   text-decoration: none;
+  font-size: small;
   color: #0065fc;
+  text-align: center;
+  padding: 30px 30px 30px 30px;
 }
 
 nav a:hover {
-  border-top: 3px solid #0065fc;
-  padding: 55px 10px 10px 10px;
-  font-weight: 500;
+  border-top: 2px solid #0065fc;
+  width: auto;
+  padding-top: 35px;
 }
 
 a:visited {
@@ -61,10 +65,6 @@ nav ul {
   text-align: center;
 }
 
-li {
-  width: 120px;
-}
-
 /* Corps */
 
 /* L'accroche du site */
@@ -72,15 +72,101 @@ li {
 #hanger {
   display: flex;
   flex-direction: column;
+  padding: 0 30px 0 10px;
+  margin-top: 13px;
 }
 
-h2 {
-  font-weight: 900;
+h1 {
   font-size: 1em;
-  margin-bottom: 0px;
+  font-weight: bold;
 }
 
-p {
-  font-size: small;
-  margin-top: 5px;
+#hanger p {
+  margin-top: 0;
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+form {
+  display: inline-flex;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+#filtres {
+  display: flex;
+  padding: 0 30px 0 10px;
+  margin-top: 35px;
+}
+
+#filtres p {
+  text-align: center;
+}
+
+/* Le formulaire de recherche */
+
+.fas {
+  display: inline-block;
+  font-size: 0.8em;
+  padding-top: 15px;
+}
+
+.contenantmarqueur {
+  padding: 8px 10px 8 px 10px;
+  height: 38px;
+  width: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.destinationdéfaut {
+  display: inline-block;
+  text-align: start;
+  font-family: "ralewayregular", Arial, serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-top: 1px solid #f2f2f2;
+  border-right: none;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: none;
+  width: 185px;
+  height: 38px;
+  padding: 0 25px 0 10px;
+}
+
+.recherchedestination {
+  display: block;
+  height: 38px;
+  background-color: #0065fc;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+button span {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-block;
+  width: 90px;
+  height: 19px;
+  line-height: 19px;
+  margin: 3px 0 3px 0;
+  padding: 3px 0 3px 0;
+}
+
+/* Les filtres de recherche */
+
+#filtres {
+  display: flex;
+  padding: 0 30px 0 10px;
+  margin-top: 35px;
+  border: 1px solid black;
+  margin-top: 12px;
+}
+
+#filtres h2 {
+  text-align: center;
+  font-size: 0.8em;
 }

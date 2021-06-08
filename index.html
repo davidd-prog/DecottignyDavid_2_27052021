@@ -40,9 +40,99 @@
       <!--Accroche du site-->
 
       <div id="hanger">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
+
+      <!--Formulaire-->
+
+      <form method="POST" action="index.html">
+        <span class="contenantmarqueur">
+          <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <input
+          class="destinationdéfaut"
+          type="search"
+          placeholder="Marseille, France"
+        />
+        <button class="recherchedestination">
+          <span>Rechercher</span>
+        </button>
+      </form>
+
+      <!--Filtres de recherche-->
+
+      <div id="filtres">
+        <h2>Filtres</h2>
+
+        <input class="économique" type="button" value="Economique" />
+
+        <form method="POST" action="index.html">
+          <input type="text" name="familial" placeholder="Familial" />
+        </form>
+        <form method="POST" action="index.html">
+          <input type="text" name="romantique" placeholder="Romantique" />
+        </form>
+        <form method="POST" action="index.html">
+          <input
+            type="text"
+            name="animaux autorisés"
+            placeholder="Animaux autorisés"
+          />
+        </form>
+      </div>
+
+      <!--les hébergements-->
+
+      <div class="container">
+        <div id="enfant1">
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Auberge La Cannebière</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Hôtel du port</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Hôtel Les Mouettes</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Hôtel de la mer</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Auberge Le Panier</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure>
+              <img src="" alt="" />
+              <figcaption>Hôtel chez Amina</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/c6de47250a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
