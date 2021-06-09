@@ -8,7 +8,7 @@
     <title>Hébergement de vacances Reservia</title>
   </head>
   <body>
-    <div id="main">
+    <section id="main">
       <header>
         <!--implantation du logo-->
 
@@ -38,7 +38,7 @@
       </header>
 
       <!--Accroche du site-->
-
+    <section class="sectionrecherche">
       <div id="hanger">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -48,7 +48,7 @@
 
       <form method="POST" action="index.html">
         <span class="contenantmarqueur">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-map-marker-alt marqueur"></i>
         </span>
         <input
           class="destinationdéfaut"
@@ -63,25 +63,50 @@
       <!--Filtres de recherche-->
 
       <div id="filtres">
-        <h2>Filtres</h2>
-
-        <input class="économique" type="button" value="Economique" />
-
-        <form method="POST" action="index.html">
-          <input type="text" name="familial" placeholder="Familial" />
-        </form>
-        <form method="POST" action="index.html">
-          <input type="text" name="romantique" placeholder="Romantique" />
-        </form>
-        <form method="POST" action="index.html">
-          <input
-            type="text"
-            name="animaux autorisés"
-            placeholder="Animaux autorisés"
-          />
-        </form>
+        <h2 class="filtrescategories">Filtres</h2>
+        <div class="filtreindividuel">
+          <div class="conteneuricone">
+            <i class="fas fa-money-bill-wave bill"></i>
+          </div>
+          <span class="dénominationfiltre">Economique</span>
+        </div>
+      
+      
+        
+        <div class="filtreindividuel">
+          <div class="conteneuricone">
+            <i class="fas fa-child"></i>
+          </div>
+          <span class="dénominationfiltre">Familial</span>
+        </div>
+      
+      
+        <div class="filtreindividuel">
+          <div class="conteneuricone">
+            <i class="fas fa-heart"></i>
+          </div>
+          <span class="dénominationfiltre">Romantique</span>
+        </div>
+      
+      
+        <div class="filtreindividuel">
+          <div class="conteneuricone">
+            <i class="fas fa-dog"></i>
+          </div>
+          <span class="dénominationfiltre">Animaux autorisés</span>
+        </div>
       </div>
 
+      <div class="résultatsrecherche">
+        <div class="conteneurmarqueur">
+          <i class="fas fa-info info"></i>
+        </div>
+
+        <p class="résultatderecherche">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
+    </section>
       <!--les hébergements-->
 
       <div class="container">
