@@ -1,5 +1,4 @@
 /* Les polices de caractères utilisées */
-
 @font-face {
   font-family: "ralewayregular";
   src: url("Fonts/Raleway-Regular.ttf") format("truetype");
@@ -17,7 +16,6 @@
 #main {
   margin: auto;
   padding: 2px 0 10px 20px;
-  border: 1px solid black;
 }
 
 h1,
@@ -37,13 +35,12 @@ header {
 #logo img {
   width: 70px;
   height: 35px;
-  padding: 10px 30px 10px 10px;
+  padding: 31px 30px 10px 10px;
 }
 
 /* Navigation*/
 
 nav a {
-  border: 1px solid black;
   text-decoration: none;
   font-size: small;
   color: #0065fc;
@@ -73,15 +70,13 @@ nav ul {
 /* L'accroche du site */
 
 #hanger {
-  border: 1px solid black;
   display: block;
-  padding: 0 30px 0 10px;
+  padding: 1px 30px 0 10px;
   margin-top: 9px;
   padding-bottom: 0px;
 }
 
 h1 {
-  border: 1px solid black;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 4px;
@@ -89,7 +84,6 @@ h1 {
 }
 
 #hanger p {
-  border: 1px solid black;
   margin-top: 0;
   font-size: 0.8em;
   font-weight: 500;
@@ -98,13 +92,7 @@ h1 {
 form {
   display: inline-flex;
   padding-left: 10px;
-  margin-bottom: 12px;
-}
-
-#filtres {
-  display: flex;
-  padding: 0 30px 0 10px;
-  margin-top: 35px;
+  margin-bottom: 18px;
 }
 
 #filtres p {
@@ -174,10 +162,12 @@ button span {
   margin-top: 12px;
 }
 
-#filtres h2 {
+.filtrescategories {
   text-align: center;
   font-size: 0.8em;
 }
+
+/* Les résultats de recherche */
 
 .résultatsrecherche {
   display: flex;
@@ -202,4 +192,38 @@ button span {
 
 .résultatderecherche {
   font-size: 0.8em;
+}
+
+/* Les hébergements */
+
+.hébergements {
+  display: flex;
+  padding: 0 30px 0 10px;
+  font-family: "ralewayregular", Arial, serif;
+}
+
+#hébergementsmarseille {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.titrehébergements {
+  font-size: 1em;
+}
+
+.étoilebleue {
+  color: #0065fc;
+}
+
+.étoilegrise {
+  color: #f2f2f2;
+}
+.évalhébergement {
+}
+
+.hébergements a {
+  text-decoration: none;
 }
