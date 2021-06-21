@@ -42,27 +42,35 @@ header {
 
 nav a {
   text-decoration: none;
+  color: black;
   font-size: small;
-  color: #0065fc;
   text-align: center;
   padding: 10px 30px 10px 30px;
 }
 
-nav a:hover {
+.lienhébergement:hover {
   border-top: 2px solid #0065fc;
+  color: #0065fc;
   width: auto;
   padding-top: 27px;
 }
 
-a:visited {
-  color: black;
+.lienactivités:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+  width: auto;
+  padding-top: 27px;
+}
+
+.lieninscriptions {
+  color: #0065fc;
+  font-weight: bold;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
   text-align: center;
-  margin-right: 20px;
 }
 
 /* Corps */
@@ -226,33 +234,6 @@ button span {
   font-size: 0.8em;
 }
 
-/* Les résultats de recherche */
-
-.résultatsrecherche {
-  display: flex;
-  align-items: center;
-  margin: 8px 0 16px 10px;
-}
-
-.conteneurmarqueur {
-  border: 1px solid #deebff;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-right: 8px;
-  padding: 0 6px 2px 6px;
-}
-
-.info {
-  font-size: 0.6em;
-  display: inline-block;
-  color: #0065fc;
-}
-
-.résultatderecherche {
-  font-size: 0.8em;
-}
-
 /* Les hébergements */
 
 .hébergements {
@@ -323,7 +304,7 @@ button span {
 
 .séjour {
   display: inline-block;
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -346,38 +327,6 @@ button span {
 .photohébergement {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
-}
-
-.titredescription {
-  border: 1px solid black;
-  font-size: 0.8em;
-}
-
-.pluspopulaires {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  width: 19%;
-  justify-content: space-around;
-  padding: 20px 0 10px 20px;
-}
-
-.titreaside {
-  border: 1px solid black;
-  font-size: 1em;
-  display: flex;
-  justify-content: space-between;
-}
-
-.descriptionséjour {
-  border: 1px solid black;
-}
-
-.propositionpopulaire {
-  border: 1px solid black;
-}
-
-.photohébergement {
   width: 100%;
   height: 95px;
 }
@@ -387,4 +336,88 @@ button span {
   padding-bottom: 1px;
   display: flex;
   flex-direction: column;
+}
+
+/* Les populaires */
+
+.titredescription {
+  display: block;
+  margin: 1% 2% 0 2%;
+  font-size: 0.8em;
+  width: 65%;
+  color: black;
+}
+
+.pluspopulaires {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 100%;
+}
+
+.titreaside {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding-top: 5%;
+  padding-left: 7%;
+}
+
+.descriptionséjour {
+  display: block;
+  margin: 1% 2% 25% 2%;
+  font-size: 0.7em;
+  color: black;
+}
+
+.propositionpopulaire {
+  background-color: white;
+  display: flex;
+  width: 85%;
+  height: 25%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px lightgray;
+}
+
+.descriptionpropositionpopulaire {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagehébergementpopulaire {
+  border-radius: 10px 0 0 10px;
+  width: 33%;
+  height: 106px;
+  float: left;
+  object-fit: cover;
+}
+
+.photocontenupopulaire {
+  display: block;
+}
+
+.popularitéhaute {
+  font-weight: 1.1em;
+}
+
+.évalhébergementpopulaire {
+  font-size: 0.6em;
+  margin-left: 2%;
+}
+
+.ensemblepopulaire {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
 }
