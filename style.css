@@ -399,11 +399,6 @@ button span {
   float: left;
   object-fit: cover;
 }
-
-.photocontenupopulaire {
-  display: block;
-}
-
 .popularitéhaute {
   font-weight: 1.1em;
 }
@@ -422,3 +417,5 @@ button span {
   width: auto;
   height: 100%;
 }
+
+/* Les activités */
