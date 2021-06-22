@@ -419,3 +419,72 @@ button span {
 }
 
 /* Les activités */
+
+.activités {
+  display: flex;
+  flex-direction: column;
+}
+
+.activitésdiverses {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activitégauche {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+
+.activitéscomplémentaires {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  justify-content: space-between;
+}
+
+.activitésecondaire {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+
+.autreactivité {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+}
+
+.activitéssupplémentaires {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+}
+
+.photoactivitégauche {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 310px;
+}
+
+.photoactivitésecondaire {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.photoautreactivité {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+}
