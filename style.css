@@ -43,7 +43,7 @@ header {
 nav a {
   text-decoration: none;
   color: black;
-  font-size: small;
+  font-size: 0.9em;
   text-align: center;
   padding: 10px 30px 10px 30px;
 }
@@ -52,14 +52,14 @@ nav a {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 27px;
+  padding-top: 25px;
 }
 
 .lienactivités:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 27px;
+  padding-top: 25px;
 }
 
 .lieninscriptions {
@@ -85,7 +85,7 @@ nav ul {
 }
 
 h1 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 4px;
   margin-top: 11px;
@@ -93,7 +93,7 @@ h1 {
 
 #hanger p {
   margin-top: 0;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -128,13 +128,13 @@ form {
   display: inline-block;
   text-align: start;
   font-family: "ralewayregular", Arial, serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   border-top: 1px solid #f2f2f2;
   border-right: none;
   border-bottom: 1px solid #f2f2f2;
   border-left: none;
-  width: 185px;
+  width: 205px;
   height: 38px;
   padding: 0 25px 0 10px;
 }
@@ -150,8 +150,8 @@ form {
 button span {
   text-align: center;
   color: white;
-  font-weight: bold;
-  font-size: 1em;
+  font-weight: normal;
+  font-size: 1.2em;
   display: inline-block;
   width: 90px;
   height: 19px;
@@ -172,7 +172,7 @@ button span {
 .filtrescategories {
   text-align: center;
   font-size: 0.9em;
-  margin-right: 2.2em;
+  margin-right: 2.3em;
 }
 
 .filtreindividuel {
@@ -180,13 +180,22 @@ button span {
   border: 2px solid #f2f2f2;
   margin-right: 16px;
   align-items: center;
-  border-radius: 2em;
+  border-radius: 2.1em;
+}
+
+.filtreindividuel:hover {
+  display: flex;
+  border: 2px solid #0065fc;
+  margin-right: 16px;
+  align-items: center;
+  border-radius: 2.1em;
+  box-shadow: 2px 2px 6px #0065fc;
 }
 
 .conteneuricone {
   display: flex;
   border: none;
-  width: 2em;
+  width: 2.1em;
   height: 100%;
   border-radius: 100%;
   align-items: center;
@@ -202,8 +211,8 @@ button span {
 .dénominationfiltre {
   font-family: "ralewayregular", Arial, serif;
   font-weight: 900;
-  font-size: 0.9em;
-  margin: 0 1.3em 0 1.3em;
+  font-size: 1em;
+  margin: 0 1.4em 0 1.4em;
 }
 
 /* Les résultats de recherche */
@@ -231,7 +240,7 @@ button span {
 
 .résultatderecherche {
   padding-top: 0.5em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 /* Les hébergements */
@@ -270,8 +279,8 @@ button span {
   color: #f2f2f2;
 }
 .évalhébergement {
-  font-size: 0.6em;
-  margin-top: 2%;
+  font-size: 0.8em;
+  margin-top: 0.5%;
 }
 
 .hébergements a {
@@ -290,18 +299,18 @@ button span {
 
 .titrelégende {
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 0;
-  margin-top: 2%;
+  margin-top: 1%;
   color: black;
 }
 
 .séjour {
   display: inline-block;
-  font-size: 0.7em;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 0.9em;
+  margin-top: 1%;
+  margin-bottom: 1%;
   color: black;
 }
 
@@ -314,7 +323,7 @@ button span {
 }
 
 .plusderésultats {
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: bold;
   width: 50%;
   padding-left: 5%;
@@ -342,8 +351,8 @@ button span {
 .titredescription {
   display: block;
   margin: 4% 2% 1% 2%;
-  font-size: 0.8em;
-  width: 65%;
+  font-size: 1em;
+  width: 76%;
   color: black;
 }
 
@@ -367,8 +376,8 @@ button span {
 
 .descriptionséjour {
   display: block;
-  margin: 2% 2% 14% 2%;
-  font-size: 0.7em;
+  margin: 2% 2% 10% 2%;
+  font-size: 0.9em;
   color: black;
 }
 
@@ -400,11 +409,11 @@ button span {
   object-fit: cover;
 }
 .popularitéhaute {
-  font-weight: 1.1em;
+  font-weight: 1.2em;
 }
 
 .évalhébergementpopulaire {
-  font-size: 0.6em;
+  font-size: 0.8em;
   margin-left: 2%;
 }
 
@@ -432,8 +441,9 @@ button span {
 }
 
 .activités h3 {
-  font-size: 0.8em;
+  font-size: 1em;
   padding-left: 3%;
+  color: black;
 }
 
 .activitésdiverses {
@@ -498,7 +508,11 @@ button span {
   height: 111px;
 }
 
-.titreactivités {
+#titreactivités {
   margin-top: 4%;
   font-size: 1.2em;
+}
+
+.activités a {
+  text-decoration: none;
 }
