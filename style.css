@@ -516,3 +516,36 @@ button span {
 .activités a {
   text-decoration: none;
 }
+
+/* Le footer */
+
+.infoscomplémentaires {
+  font-family: "ralewayregular", Arial, serif;
+  display: flex;
+  width: 100%;
+}
+
+.Contenantliens {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  width: 25%;
+}
+
+.lieninfos {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  display: inline;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titreinfoscomplémentaires {
+  display: flex;
+  flex-direction: row;
+}
+
+.Contenantliens ul {
+  list-style-type: none;
+}
