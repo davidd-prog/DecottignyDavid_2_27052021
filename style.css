@@ -373,7 +373,7 @@ button span {
   width: 33%;
   height: 100%;
   padding-top: 0.8%;
-  padding-bottom: 0.8%;
+  padding-bottom: 0.7%;
 }
 
 .titreaside {
@@ -435,14 +435,6 @@ button span {
   height: 100%;
   align-items: center;
   padding-top: 0.5%;
-}
-
-.cartespopulaires {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 100%;
-  align-items: center;
 }
 
 /* Les activités */
@@ -547,7 +539,7 @@ button span {
   width: auto;
   background-color: #f2f2f2;
   margin: auto;
-  padding-left: 3.4%;
+  padding-left: 50px;
   padding-bottom: 2%;
 }
 
@@ -585,14 +577,17 @@ button span {
 
   #hébergementsmarseille {
     width: 100%;
+    margin-top: 2%;
   }
 
   .pluspopulaires {
     width: 100%;
+    margin-bottom: 2%;
   }
 
   .propositionpopulaire {
-    width: 28%;
+    width: 92%;
+    margin: 1%;
   }
 
   .ensemblepopulaire {
@@ -601,7 +596,47 @@ button span {
   }
 
   .cartespopulaires {
-    display: flex;
-    flex-direction: row;
+    border: 1px solid black;
+  }
+
+  .titreaside {
+    width: 92%;
+  }
+
+  .activitésdiverses {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .activitégauche {
+    width: 100%;
+  }
+
+  .photoactivitégauche {
+    height: 250px;
+  }
+
+  .activitéssupplémentaires {
+    width: 100%;
+  }
+
+  .activitéscomplémentaires {
+    width: 100%;
+  }
+
+  .activitésecondaire {
+    height: 50%;
+  }
+
+  .photoactivitésecondaire {
+    height: 250px;
+  }
+
+  .autreactivité {
+    height: 50%;
+  }
+
+  .photoautreactivité {
+    height: 250px;
   }
 }
