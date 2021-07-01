@@ -12,12 +12,13 @@
 }
 
 /* Le bloc page */
+
 body {
-  height: 100%;
+  margin: 0;
+  max-width: 1519px;
 }
 
 #main {
-  margin: auto;
   padding: 2px 30px 0 50px;
 }
 
@@ -55,14 +56,14 @@ nav a {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 25px;
+  padding-top: 16px;
 }
 
 .lienactivités:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 25px;
+  padding-top: 16px;
 }
 
 .lieninscriptions {
@@ -433,6 +434,15 @@ button span {
   width: auto;
   height: 100%;
   align-items: center;
+  padding-top: 0.5%;
+}
+
+.cartespopulaires {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  align-items: center;
 }
 
 /* Les activités */
@@ -443,6 +453,7 @@ button span {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  margin-bottom: 2%;
 }
 
 .activités article {
@@ -533,10 +544,10 @@ button span {
 .infoscomplémentaires {
   font-family: "ralewayregular", Arial, serif;
   display: flex;
-  width: 100%;
+  width: auto;
   background-color: #f2f2f2;
-  margin-top: 5%;
-  padding-left: 50px;
+  margin: auto;
+  padding-left: 3.4%;
   padding-bottom: 2%;
 }
 
@@ -564,4 +575,33 @@ button span {
 
 .Contenantliens ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .hébergements {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  #hébergementsmarseille {
+    width: 100%;
+  }
+
+  .pluspopulaires {
+    width: 100%;
+  }
+
+  .propositionpopulaire {
+    width: 28%;
+  }
+
+  .ensemblepopulaire {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartespopulaires {
+    display: flex;
+    flex-direction: row;
+  }
 }
