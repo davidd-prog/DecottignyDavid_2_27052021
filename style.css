@@ -52,14 +52,7 @@ nav a {
   padding: 10px 30px 10px 30px;
 }
 
-.lienhébergement:hover {
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
-  width: auto;
-  padding-top: 16px;
-}
-
-.lienactivités:hover {
+.liensurligné:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
@@ -650,5 +643,17 @@ button span {
   #main {
     width: auto;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .prepamobile {
+    width: 50%;
+    margin-top: 20%;
   }
 }
