@@ -31,11 +31,6 @@ nav a {
 
 /* Le header */
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 #logo img {
   width: 95px;
   height: 46px;
@@ -44,6 +39,25 @@ header {
 
 /* Navigation*/
 
+.menu1 {
+  border: 1px solid black;
+  display: flex;
+  justify-content: stretch;
+}
+
+.prepamobile {
+  border: 1px solid blue;
+}
+
+.lienstatique {
+  border: 1px solid black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4%;
+}
 nav a {
   text-decoration: none;
   color: black;
@@ -56,7 +70,7 @@ nav a {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 16px;
+  padding-top: 32px;
 }
 
 .lieninscriptions {
@@ -647,13 +661,4 @@ button span {
 }
 
 @media screen and (max-width: 576px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap-reverse;
-  }
-
-  .prepamobile {
-    width: 50%;
-    margin-top: 20%;
-  }
 }
