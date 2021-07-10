@@ -31,6 +31,11 @@ nav a {
 
 /* Le header */
 
+.entête {
+  display: flex;
+  justify-content: space-between;
+}
+
 #logo img {
   width: 95px;
   height: 46px;
@@ -39,25 +44,6 @@ nav a {
 
 /* Navigation*/
 
-.menu1 {
-  border: 1px solid black;
-  display: flex;
-  justify-content: stretch;
-}
-
-.prepamobile {
-  border: 1px solid blue;
-}
-
-.lienstatique {
-  border: 1px solid black;
-}
-
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -4%;
-}
 nav a {
   text-decoration: none;
   color: black;
@@ -66,11 +52,18 @@ nav a {
   padding: 10px 30px 10px 30px;
 }
 
-.liensurligné:hover {
+.lienhébergement:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 32px;
+  padding-top: 17px;
+}
+
+.lienactivités:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+  width: auto;
+  padding-top: 17px;
 }
 
 .lieninscriptions {
@@ -225,6 +218,10 @@ button span {
   font-weight: 900;
   font-size: 1em;
   margin: 0 1.4em 0 1.4em;
+}
+
+.loupe {
+  display: none;
 }
 
 /* Les résultats de recherche */
@@ -660,5 +657,32 @@ button span {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+  #main {
+    width: auto;
+    padding: 0;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .lienhébergement {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .lieninscriptions {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .navmenu {
+    display: flex;
+    width: 100%;
+  }
+
+  .loupe {
+    color: white;
+  }
 }
