@@ -19,7 +19,7 @@ body {
 }
 
 #main {
-  padding: 2px 30px 0 50px;
+  padding: 20px 30px 0 50px;
 }
 
 h1,
@@ -31,39 +31,33 @@ nav a {
 
 /* Le header */
 
-.entête {
-  display: flex;
-  justify-content: space-between;
-}
-
 #logo img {
   width: 95px;
   height: 46px;
-  padding: 11px 30px 10px 15px;
+  position: absolute;
 }
 
 /* Navigation*/
 
+.navmenu {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav a {
   text-decoration: none;
   color: black;
-  font-size: 0.9em;
-  text-align: center;
-  padding: 10px 30px 10px 30px;
+  font-size: 1em;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.lienhébergement:hover {
+.liensurligné:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   width: auto;
-  padding-top: 17px;
-}
-
-.lienactivités:hover {
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
-  width: auto;
-  padding-top: 17px;
+  padding-top: 34px;
 }
 
 .lieninscriptions {
@@ -75,6 +69,10 @@ nav ul {
   display: flex;
   list-style-type: none;
   text-align: center;
+}
+
+.prepamobile {
+  display: flex;
 }
 
 /* Corps */
@@ -658,31 +656,43 @@ button span {
 }
 
 @media screen and (max-width: 600px) {
-  #main {
-    width: auto;
-    padding: 0;
+  .loupe {
+    color: white;
   }
 
-  header {
-    flex-wrap: wrap;
+  .menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-left: 0px;
   }
 
-  .lienhébergement {
-    border: 1px solid black;
+  .prepamobile {
     width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
   }
 
-  .lieninscriptions {
-    border: 1px solid black;
+  .boxlieninscriptions {
+    margin-left: 68%;
+  }
+
+  .boxliensurligné {
     width: 100%;
+    justify-content: center;
+  }
+
+  .boxliensurligné2 {
+    width: 100%;
+    justify-content: center;
   }
 
   .navmenu {
-    display: flex;
-    width: 100%;
+    justify-content: space-evenly;
   }
 
-  .loupe {
-    color: white;
+  .liensurligné:hover {
+    border-top: none;
   }
 }
