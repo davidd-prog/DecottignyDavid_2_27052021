@@ -10,34 +10,37 @@
   <body>
     <main id="main">
       <header>
-        <!--implantation du logo-->
-
         <div id="logo">
-          <img src="Images/Reservia@3x.png" alt="logo de Reservia" />
+          <img
+            class="photologo"
+            src="Images/Reservia@3x.png"
+            alt="logo de Reservia"
+          />
         </div>
 
         <!--menu de navigation-->
 
-        <nav>
-          <ul>
-            <li>
-              <a
-                class="lienhébergement"
-                href="#hébergementsmarseille"
-                title="Consulter nos hébergements"
-                >Hébergements</a
-              >
-            </li>
-            <li>
-              <a
-                class="lienactivités"
-                href="#titreactivités"
-                title="Consulter nos activités"
-                >Activités</a
-              >
-            </li>
-
-            <li>
+        <nav class="navmenu">
+          <ul class="menu">
+            <div class="prepamobile">
+              <li class="boxliensurligné">
+                <a
+                  class="liensurligné"
+                  href="#hébergementsmarseille"
+                  title="Consulter nos hébergements"
+                  >Hébergements</a
+                >
+              </li>
+              <li class="boxliensurligné2">
+                <a
+                  class="liensurligné"
+                  href="#titreactivités"
+                  title="Consulter nos activités"
+                  >Activités</a
+                >
+              </li>
+            </div>
+            <li class="boxlieninscriptions">
               <a
                 class="lieninscriptions"
                 href="inscriptions"
@@ -69,6 +72,7 @@
           />
           <button class="recherchedestination">
             <span>Rechercher</span>
+            <i class="fas fa-search loupe"></i>
           </button>
         </form>
 
