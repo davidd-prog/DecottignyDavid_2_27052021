@@ -868,13 +868,65 @@ form {
       padding-left: 23px;
     }
 
+    /* Les activités sur mobile */
+
+    #titreactivités {
+      padding-left: 20px;
+      margin-top: 35px;
+    }
+
+    .activitégauche {
+      width: 90%;
+      margin-left: 20px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+    }
+
+    .photoactivitégauche {
+      height: 160px;
+    }
+
+    .activitésecondaire {
+      margin-left: 20px;
+      margin-right: 25px;
+      height: 205px;
+      margin-bottom: 25px;
+    }
+
+    .titreactivitésecondaire {
+      margin-top: 10px;
+    }
+
+    .autreactivité {
+      margin-left: 20px;
+      margin-right: 25px;
+      height: 205px;
+      margin-bottom: 25px;
+    }
+
+    .photoautreactivité {
+      height: 160px;
+    }
+
+    .titrelégendeautreactivité {
+      margin-top: 10px;
+    }
+
+    .photoactivitésecondaire {
+      height: 160px;
+    }
+
     /* Le footer sur mobile */
 
     .infoscomplémentaires {
       flex-direction: column;
       padding-left: 5%;
-      padding-top: 3%;
-      padding-bottom: 7%;
+      padding-top: 7%;
+      padding-bottom: 15%;
+    }
+
+    .activitéssupplémentaires {
+      padding-bottom: 13px;
     }
 
     .Contenantliens {
