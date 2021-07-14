@@ -136,7 +136,7 @@ form {
   border-right: none;
   border-bottom: 1px solid #f2f2f2;
   border-left: none;
-  width: 213px;
+  width: 190px;
   height: 38px;
   padding: 0 25px 0 10px;
 }
@@ -150,7 +150,7 @@ form {
   font-weight: normal;
   font-size: 1rem;
   display: inline-block;
-  width: 130px;
+  width: 120px;
   height: 38px;
   line-height: 19px;
   padding: 0 10px 0 10px;
@@ -158,8 +158,8 @@ form {
   border-radius: 0 10px 10px 0;
 }
 
-.fa-search {
-  opacity: 0;
+.loupe {
+  display: none;
 }
 
 /* Les filtres de recherche */
@@ -651,10 +651,6 @@ form {
     padding-top: 20px;
     padding-left: 0px;
   }
-
-  .boutonrecherche {
-    color: #0065fc;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -790,19 +786,14 @@ form {
       display: none;
     }
 
-    .recherchedestinationmobile {
-      display: block;
-      height: 38px;
-      background-color: #0065fc;
-      border-radius: 0 10px 10px 0;
-      border: none;
-      cursor: pointer;
-      width: 35px;
-      border-radius: 10px;
-    }
-
-    .fa-search {
+    .loupe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
+      background-color: #0065fc;
+      border-radius: 10px;
+      width: 42px;
     }
 
     /* Les filtres de recherche sur mobile */
