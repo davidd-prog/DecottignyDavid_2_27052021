@@ -151,6 +151,7 @@ form {
 }
 
 .boutonrecherche {
+  text-decoration: none;
   text-align: center;
   color: white;
   font-weight: normal;
@@ -680,6 +681,7 @@ form {
     margin-left: 0px;
     margin-right: 0px;
     justify-content: space-between;
+    padding-left: 0px;
   }
 
   .boxlieninscriptions {
@@ -688,19 +690,19 @@ form {
   }
 
   .boxliensurligné {
-    width: 100%;
+    width: 50%;
     justify-content: center;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 40px;
   }
 
   .boxliensurligné2 {
-    width: 100%;
+    width: 50%;
     justify-content: center;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 40px;
   }
 
   .boxliensurligné:hover {
@@ -794,6 +796,10 @@ form {
       cursor: pointer;
       width: 35px;
       border-radius: 10px;
+    }
+
+    .fa-search {
+      color: white;
     }
 
     /* Les filtres de recherche sur mobile */
