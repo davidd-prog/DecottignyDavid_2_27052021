@@ -6,9 +6,9 @@
 }
 
 @font-face {
-  font-family: "ralewayregular";
+  font-family: "ralewaybold";
   src: url("Fonts/Raleway-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Le bloc page */
@@ -141,31 +141,25 @@ form {
   padding: 0 25px 0 10px;
 }
 
-.recherchedestination {
-  display: block;
-  height: 38px;
-  background-color: #0065fc;
-  border-radius: 0 10px 10px 0;
-  border: none;
-  cursor: pointer;
-}
-
 .boutonrecherche {
+  font-family: "ralewaybold";
   text-decoration: none;
   text-align: center;
   color: white;
+  background-color: #0065fc;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1rem;
   display: inline-block;
-  width: 90px;
-  height: 19px;
+  width: 130px;
+  height: 38px;
   line-height: 19px;
-  margin: 3px 0 3px 0;
-  padding: 3px 0 3px 0;
+  padding: 0 10px 0 10px;
+  border: none;
+  border-radius: 0 10px 10px 0;
 }
 
-.recherchedestinationmobile {
-  display: none;
+.fa-search {
+  opacity: 0;
 }
 
 /* Les filtres de recherche */
@@ -657,6 +651,10 @@ form {
     padding-top: 20px;
     padding-left: 0px;
   }
+
+  .boutonrecherche {
+    color: #0065fc;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -754,6 +752,11 @@ form {
       padding-top: 10px;
       margin-left: 0px;
       margin-right: 0px;
+    }
+
+    nav a {
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     /* L'accroche du site sur mobile */
