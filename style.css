@@ -62,7 +62,7 @@ nav a {
 
 .lieninscriptions {
   color: #0065fc;
-  font-weight: bold;
+  font-family: "ralewaybold", Arial, serif;
 }
 
 nav ul {
@@ -87,6 +87,7 @@ nav ul {
 }
 
 h1 {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 4px;
@@ -142,7 +143,7 @@ form {
 }
 
 .boutonrecherche {
-  font-family: "ralewaybold";
+  font-family: "ralewaybold", Arial, serif;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -156,6 +157,7 @@ form {
   padding: 0 10px 0 10px;
   border: none;
   border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .loupe {
@@ -172,6 +174,7 @@ form {
 }
 
 .filtrescategories {
+  font-family: "ralewaybold", Arial, serif;
   text-align: center;
   font-size: 0.9em;
   margin-right: 2.3em;
@@ -205,7 +208,7 @@ form {
 }
 
 .dénominationfiltre {
-  font-family: "ralewayregular", Arial, serif;
+  font-family: "ralewaybold", Arial, serif;
   font-weight: 900;
   font-size: 0.9em;
   padding-left: 10px;
@@ -271,6 +274,7 @@ form {
 }
 
 .titrehébergements {
+  font-family: "ralewaybold", Arial, serif;
   display: inline-block;
   font-size: 1.2em;
   padding-left: 2%;
@@ -304,9 +308,9 @@ form {
 }
 
 .titrelégende {
+  font-family: "ralewaybold", Arial, serif;
   display: inline-block;
   font-size: 1em;
-  font-weight: bold;
   margin-bottom: 0;
   margin-top: 1%;
   color: black;
@@ -330,8 +334,8 @@ form {
 }
 
 .plusderésultats {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.1em;
-  font-weight: bold;
   width: 50%;
   padding-left: 2%;
   padding-bottom: 2%;
@@ -357,6 +361,7 @@ form {
 /* Les populaires */
 
 .titredescription {
+  font-family: "ralewaybold", Arial, serif;
   display: block;
   margin: 4% 2% 1% 2%;
   font-size: 1em;
@@ -377,6 +382,7 @@ form {
 }
 
 .titreaside {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -440,7 +446,7 @@ form {
 /* Les activités */
 
 .activités {
-  font-family: "ralewayregular", Arial, serif;
+  font-family: "ralewaybold", Arial, serif;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -523,6 +529,7 @@ form {
 }
 
 #titreactivités {
+  font-family: "ralewaybold", Arial, serif;
   margin-top: 4%;
   font-size: 1.2em;
 }
@@ -532,6 +539,10 @@ form {
 }
 
 /* Le footer */
+
+.infoscomplémentaires h3 {
+  font-family: "ralewaybold", Arial, serif;
+}
 
 .infoscomplémentaires {
   font-family: "ralewayregular", Arial, serif;
@@ -654,10 +665,6 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-  .loupe {
-    color: white;
-  }
-
   #logo img {
     padding-left: 20px;
   }
