@@ -35,6 +35,7 @@ nav a {
 #logo img {
   width: 95px;
   height: 46px;
+  margin-left: 9px;
   position: absolute;
 }
 
@@ -62,17 +63,13 @@ nav a {
 
 .lieninscriptions {
   color: #0065fc;
-  font-weight: bold;
+  font-family: "ralewaybold", Arial, serif;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
   text-align: center;
-}
-
-.prepamobile {
-  display: flex;
 }
 
 /* Corps */
@@ -87,8 +84,8 @@ nav ul {
 }
 
 h1 {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.2em;
-  font-weight: bold;
   margin-bottom: 4px;
   margin-top: 11px;
 }
@@ -96,7 +93,6 @@ h1 {
 #hanger p {
   margin-top: 0;
   font-size: 1em;
-  font-weight: 500;
 }
 
 form {
@@ -114,24 +110,23 @@ form {
 .marqueur {
   display: inline-block;
   font-size: 0.8em;
-  padding-top: 15px;
+  padding-top: 14px;
 }
 
 .contenantmarqueur {
-  padding: 8px 10px 8 px 10px;
+  display: flex;
   height: 38px;
   width: 40px;
   background-color: #f2f2f2;
-  text-align: center;
+  justify-content: center;
   border-radius: 10px 0 0 10px;
 }
 
 .destinationdéfaut {
   display: inline-block;
   text-align: start;
-  font-family: "ralewayregular", Arial, serif;
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1em;
-  font-weight: bold;
   border-top: 1px solid #f2f2f2;
   border-right: none;
   border-bottom: 1px solid #f2f2f2;
@@ -142,7 +137,7 @@ form {
 }
 
 .boutonrecherche {
-  font-family: "ralewaybold";
+  font-family: "ralewaybold", Arial, serif;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -156,6 +151,7 @@ form {
   padding: 0 10px 0 10px;
   border: none;
   border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .loupe {
@@ -172,6 +168,7 @@ form {
 }
 
 .filtrescategories {
+  font-family: "ralewaybold", Arial, serif;
   text-align: center;
   font-size: 0.9em;
   margin-right: 2.3em;
@@ -182,10 +179,19 @@ form {
   border: 2px solid #f2f2f2;
   margin-right: 20px;
   align-items: center;
-  border-radius: 2em;
+  border-radius: 2.1em;
   height: 35px;
   margin-bottom: 15px;
   cursor: pointer;
+}
+
+.filtreindividuel:hover {
+  display: flex;
+  border: 2px solid #0065fc;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 2.1em;
+  box-shadow: 2px 2px 6px #0065fc;
 }
 
 .conteneuricone {
@@ -205,8 +211,7 @@ form {
 }
 
 .dénominationfiltre {
-  font-family: "ralewayregular", Arial, serif;
-  font-weight: 900;
+  font-family: "ralewaybold", Arial, serif;
   font-size: 0.9em;
   padding-left: 10px;
   padding-right: 20px;
@@ -271,6 +276,7 @@ form {
 }
 
 .titrehébergements {
+  font-family: "ralewaybold", Arial, serif;
   display: inline-block;
   font-size: 1.2em;
   padding-left: 2%;
@@ -304,9 +310,9 @@ form {
 }
 
 .titrelégende {
+  font-family: "ralewaybold", Arial, serif;
   display: inline-block;
   font-size: 1em;
-  font-weight: bold;
   margin-bottom: 0;
   margin-top: 1%;
   color: black;
@@ -330,8 +336,8 @@ form {
 }
 
 .plusderésultats {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.1em;
-  font-weight: bold;
   width: 50%;
   padding-left: 2%;
   padding-bottom: 2%;
@@ -357,6 +363,7 @@ form {
 /* Les populaires */
 
 .titredescription {
+  font-family: "ralewaybold", Arial, serif;
   display: block;
   margin: 4% 2% 1% 2%;
   font-size: 1em;
@@ -377,6 +384,7 @@ form {
 }
 
 .titreaside {
+  font-family: "ralewaybold", Arial, serif;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -440,7 +448,7 @@ form {
 /* Les activités */
 
 .activités {
-  font-family: "ralewayregular", Arial, serif;
+  font-family: "ralewaybold", Arial, serif;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -523,7 +531,9 @@ form {
 }
 
 #titreactivités {
+  font-family: "ralewaybold", Arial, serif;
   margin-top: 4%;
+  margin-bottom: 5px;
   font-size: 1.2em;
 }
 
@@ -532,6 +542,10 @@ form {
 }
 
 /* Le footer */
+
+.infoscomplémentaires h3 {
+  font-family: "ralewaybold", Arial, serif;
+}
 
 .infoscomplémentaires {
   font-family: "ralewayregular", Arial, serif;
@@ -570,15 +584,31 @@ form {
 }
 
 @media screen and (max-width: 1200px) {
+  /* Les hébergements */
+
   .hébergements {
     display: flex;
     flex-wrap: wrap-reverse;
+  }
+
+  .titrehébergements {
+    padding-left: 3%;
   }
 
   #hébergementsmarseille {
     width: 100%;
     margin-top: 2%;
   }
+
+  .propositions {
+    justify-content: center;
+  }
+
+  .plusderésultats {
+    padding-left: 3%;
+  }
+
+  /* Les populaires */
 
   .pluspopulaires {
     width: 100%;
@@ -600,7 +630,14 @@ form {
   }
 
   .titreaside {
-    width: 92%;
+    width: 93%;
+  }
+
+  /* Les activités */
+
+  #titreactivités {
+    padding-left: 10px;
+    margin-top: 50px;
   }
 
   .activitésdiverses {
@@ -645,21 +682,45 @@ form {
   }
 }
 
+/* Elargissement du site pour plus de confort de navigation */
+
 @media screen and (max-width: 768px) {
   #main {
     padding-right: 0;
     padding-top: 20px;
     padding-left: 0px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .loupe {
-    color: white;
+  .activitégauche {
+    width: 92%;
+    margin-left: 25px;
   }
 
+  .activitésecondaire {
+    width: 92%;
+    margin-left: 25px;
+  }
+
+  .autreactivité {
+    width: 92%;
+    margin-left: 25px;
+  }
+
+  #titreactivités {
+    margin-left: 15px;
+  }
+}
+
+/* Breakpoint pour la mise en place du menu responsive */
+
+@media screen and (max-width: 600px) {
   #logo img {
     padding-left: 20px;
+  }
+
+  nav a {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .menu {
@@ -667,15 +728,6 @@ form {
     flex-wrap: wrap-reverse;
     padding-left: 0px;
     margin-top: 0px;
-  }
-
-  .prepamobile {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    justify-content: space-between;
-    padding-left: 0px;
   }
 
   .boxlieninscriptions {
@@ -725,9 +777,43 @@ form {
     border-top: none;
   }
 
+  /* Réduction de la marge latérale et augmentation de la marge du bas sur les filtres */
+
   .filtreindividuel {
     margin-right: 15px;
     margin-bottom: 11px;
+  }
+
+  .filtreindividuel:hover {
+    margin-right: 15px;
+  }
+
+  /* Mise en place responsive en colonne des hébergements */
+
+  #hébergementsmarseille {
+    background-color: white;
+  }
+
+  .propositions {
+    flex-direction: column;
+  }
+
+  .proposition {
+    width: 92%;
+    padding: 1%;
+  }
+
+  .photohébergement {
+    height: 190px;
+  }
+
+  .plusderésultats {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .titrehébergements {
+    padding-left: 20px;
   }
 
   .Contenantliens {
@@ -735,202 +821,189 @@ form {
   }
 }
 
-@media screen and (max-width: 576px) {
+/* Mise en place version iphone 8 en conformité avec la maquette  */
+
+@media screen and (max-width: 400px) {
+  /* Le bloc page */
+
   #main {
-    width: auto;
-    margin: 5% 1% 3% 2%;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
-  @media screen and (max-width: 400px) {
-    /* Le bloc page sur mobile */
+  /* L'accroche du site */
 
-    #main {
-      padding-top: 10px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+  #hanger {
+    padding-left: 20px;
+  }
 
-    nav a {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  #hanger p {
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
 
-    /* L'accroche du site sur mobile */
+  h1 {
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
 
-    #hanger {
-      padding-left: 20px;
-    }
+  /* Le formulaire de recherche */
 
-    #hanger p {
-      font-size: 0.9em;
-      margin-top: 10px;
-      margin-bottom: 25px;
-    }
+  form {
+    padding-left: 20px;
+  }
 
-    h1 {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
+  .recherchedestination {
+    display: none;
+  }
 
-    /* Le formulaire de recherche sur mobile */
+  .boutonrecherche {
+    display: none;
+  }
 
-    form {
-      padding-left: 20px;
-    }
+  .loupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 10px;
+    width: 42px;
+  }
 
-    .recherchedestination {
-      display: none;
-    }
+  /* Les filtres de recherche */
 
-    .boutonrecherche {
-      display: none;
-    }
+  #filtres {
+    margin-top: 0;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
 
-    .loupe {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      background-color: #0065fc;
-      border-radius: 10px;
-      width: 42px;
-    }
+  .filtrescategories {
+    width: 100%;
+    text-align: left;
+  }
 
-    /* Les filtres de recherche sur mobile */
+  /* Les résultats de recherche */
 
-    #filtres {
-      margin-top: 0;
-      padding-right: 0px;
-      padding-left: 20px;
-    }
+  .résultatsrecherche {
+    padding-left: 10px;
+    margin-right: 5px;
+  }
 
-    .filtrescategories {
-      width: 100%;
-      text-align: left;
-    }
+  .résultatderecherche {
+    font-size: 0.9em;
+    padding-top: 0px;
+  }
 
-    /* Les résultats de recherche sur mobile */
+  .conteneurmarqueur {
+    width: 20px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+  }
 
-    .résultatsrecherche {
-      padding-left: 10px;
-      margin-right: 5px;
-    }
+  /* La section populaires */
 
-    .résultatderecherche {
-      font-size: 0.9em;
-      padding-top: 0px;
-    }
+  .pluspopulaires {
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 
-    .conteneurmarqueur {
-      width: 20px;
-      margin-bottom: 25px;
-      margin-right: 10px;
-    }
+  .propositionpopulaire {
+    width: 90%;
+    margin-bottom: 7px;
+  }
 
-    /* La section populaires sur mobile */
+  .titreaside {
+    width: 90%;
+  }
 
-    .pluspopulaires {
-      border-radius: 0px;
-      padding-top: 20px;
-      padding-bottom: 25px;
-    }
+  /* Les hébergements */
 
-    .propositionpopulaire {
-      width: 85%;
-      margin-bottom: 7px;
-    }
+  .proposition {
+    width: 90%;
+    margin-right: 10px;
+  }
 
-    .titreaside {
-      width: 85%;
-    }
+  .photohébergement {
+    height: 110px;
+  }
 
-    /* Les hébergements sur mobile */
+  .plusderésultats {
+    margin-top: 20px;
+    padding-left: 16px;
+  }
 
-    #hébergementsmarseille {
-      background-color: white;
-    }
+  .titrehébergements {
+    padding-left: 17px;
+  }
 
-    .propositions {
-      flex-direction: column;
-    }
+  /* Les activités */
 
-    .proposition {
-      width: 85%;
-      padding: 1%;
-    }
+  #titreactivités {
+    margin-top: 35px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
 
-    .plusderésultats {
-      margin-top: 20px;
-      padding-left: 20px;
-    }
+  .activitégauche {
+    width: 90%;
+    margin-left: 19px;
+    margin-bottom: 25px;
+  }
 
-    .titrehébergements {
-      padding-left: 23px;
-    }
+  .photoactivitégauche {
+    height: 160px;
+  }
 
-    /* Les activités sur mobile */
+  .activitésecondaire {
+    width: 90%;
+    margin-left: 20px;
+    height: 205px;
+    margin-bottom: 25px;
+  }
 
-    #titreactivités {
-      padding-left: 20px;
-      margin-top: 35px;
-    }
+  .titreactivitésecondaire {
+    margin-top: 10px;
+  }
 
-    .activitégauche {
-      width: 90%;
-      margin-left: 20px;
-      margin-right: 25px;
-      margin-bottom: 25px;
-    }
+  .autreactivité {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 25px;
+    height: 205px;
+    margin-bottom: 25px;
+  }
 
-    .photoactivitégauche {
-      height: 160px;
-    }
+  .photoautreactivité {
+    height: 160px;
+  }
 
-    .activitésecondaire {
-      margin-left: 20px;
-      margin-right: 25px;
-      height: 205px;
-      margin-bottom: 25px;
-    }
+  .titrelégendeautreactivité {
+    margin-top: 10px;
+  }
 
-    .titreactivitésecondaire {
-      margin-top: 10px;
-    }
+  .photoactivitésecondaire {
+    height: 160px;
+  }
 
-    .autreactivité {
-      margin-left: 20px;
-      margin-right: 25px;
-      height: 205px;
-      margin-bottom: 25px;
-    }
+  /* Le footer */
 
-    .photoautreactivité {
-      height: 160px;
-    }
+  .infoscomplémentaires {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 7%;
+    padding-bottom: 9%;
+  }
 
-    .titrelégendeautreactivité {
-      margin-top: 10px;
-    }
+  .activitéssupplémentaires {
+    padding-bottom: 13px;
+  }
 
-    .photoactivitésecondaire {
-      height: 160px;
-    }
-
-    /* Le footer sur mobile */
-
-    .infoscomplémentaires {
-      flex-direction: column;
-      padding-left: 5%;
-      padding-top: 7%;
-      padding-bottom: 15%;
-    }
-
-    .activitéssupplémentaires {
-      padding-bottom: 13px;
-    }
-
-    .Contenantliens {
-      width: auto;
-    }
+  .Contenantliens {
+    width: auto;
   }
 }
