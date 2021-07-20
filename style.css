@@ -19,10 +19,6 @@ body {
   max-width: 1519px;
 }
 
-#main {
-  padding: 0 30px 0 50px;
-}
-
 h1,
 h2,
 p,
@@ -73,10 +69,13 @@ nav a {
 nav ul {
   display: flex;
   list-style-type: none;
-  text-align: center;
 }
 
 /* Corps */
+
+#main {
+  padding: 0 30px 0 50px;
+}
 
 /* L'accroche du site */
 
@@ -103,10 +102,6 @@ form {
   display: inline-flex;
   padding-left: 10px;
   margin-bottom: 18px;
-}
-
-#filtres p {
-  text-align: center;
 }
 
 /* Le formulaire de recherche */
@@ -727,6 +722,10 @@ form {
 
   #logo img {
     padding-left: 20px;
+  }
+
+  nav ul {
+    text-align: center;
   }
 
   nav a {
