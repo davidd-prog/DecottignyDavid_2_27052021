@@ -14,7 +14,7 @@
 /* Le bloc page */
 
 body {
-  margin: 0;
+  margin: auto;
   width: 100%;
   max-width: 1519px;
 }
@@ -425,7 +425,7 @@ form {
   object-fit: cover;
 }
 .popularitéhaute {
-  font-weight: 1.2em;
+  font-weight: bolder;
 }
 
 .évalhébergementpopulaire {
